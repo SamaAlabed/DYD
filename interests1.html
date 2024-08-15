@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decode Your Destination | Contact</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/unicons.css"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/LearnTupe (5).png">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/LearnTupe (5).png">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<style>
+.contact-container {
+    background: var(--color-bg1);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 4rem;
+    height: auto;
+    margin: 7rem auto;
+    border-radius: 1rem;
+    max-width: 95%;
+}
+
+.constact-aside {
+    background: var(--color-primary);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.interest-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.interest-box {
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.interest-box:hover {
+    background: var(--color-primary-light);
+}
+
+.interest-box.selected {
+    background: var(--color-primary-dark);
+}
+
+.interest-box span {
+    margin-left: 0.5rem;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-link:hover {
+    background-color: #0056b3;
+}
+
+/* Optional Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .contact-container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .constact-aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .interest-selection {
+        margin-bottom: 1.5rem;
+    }
+
+    .interest-box {
+        width: 100%;
+        justify-content: center;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: var(--color-bg1);
+    margin: 20% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="index1.html"><h3>Decode Your Destination</h3></a>
+            <ul class="nav-menu">
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="roadmaps1.html">Road Maps</a></li>
+                <li><a href="courses1.html">Courses</a></li>
+                <!-- <li><a href="contact.php">Contact</a></li> -->
+                <li><a href="Jobs1.html">Jobs & Interns</a></li>
+                <li><a href="Communties1.html">Communities</a></li>
+                <li><a href="profile.html">profile</a></li>
+            </ul>
+            <button id="open-menu-btn"><span class="material-symbols-outlined">
+                menu
+                </span></i></button>
+            <button id="close-menu-btn"><span class="material-symbols-outlined">
+                close
+                </span></i></button>
+        </div>
+    </nav>
+    <section>
+        <div class="contact-container">
+            <div class="constact-aside">
+                <h1>Pick Your Interests</h1>
+                <div class="interest-selection">
+                    <div class="interest-box" data-interest="Web Development">
+                        Web Development <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Data Science">
+                        Data Science <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Artificial Intelligence">
+                        Artificial Intelligence <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Machine Learning">
+                        Machine Learning <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Business Intelligence">
+                        Business Intelligence <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Cyber Security">
+                        Cyber Security <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Cloud Computing">
+                        Cloud Computing <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Game Development">
+                        Game Development <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Python">
+                        Python <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="JavaScript">
+                        JavaScript <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="PHP">
+                        PHP <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Network Security">
+                        Network Security <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Cryptography">
+                        Cryptography <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Data Mining">
+                        Data Mining <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Ethical Hacking">
+                        Ethical Hacking <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Embedded Systems">
+                        Embedded Systems <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="C#">
+                        C# <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Java">
+                        Java <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Mobile Development">
+                        Mobile Development <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Frontend development">
+                        Frontend development <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Backend development">
+                        Backend development <span class="material-icons">add</span>
+                    </div>
+                    <div class="interest-box" data-interest="Fullstack development">
+                        Fullstack development <span class="material-icons">add</span>
+                    </div>
+                    
+                    
+                    
+                   
+                </div>
+                <a href="roadmaps1.html" class="btn" style="border-radius: 50px">Generate RoadMap</a>
+               
+            </div>
+        </div>
+    </section>
+    
+    
+    
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-1">
+            <a href="index1.html" class="footer-logo"><h4>ATEESH</h4></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, hic.</p>
+        </div>
+
+        <div class="footer-2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses1.html">Courses</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-3">
+            <h4>Primacy</h4>
+            <ul class="primacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and conditions </a></li>
+                <li><a href="#">Refund Policy </a></li>
+            </ul>
+
+        </div>
+        <div class="footer-4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+91 8004640159</p>
+                <p>DecodeYourDestination@gmail.com</p>
+            </div>
+            <ul class="footer-social">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+
+        </div>
+        <div class="footer-copyright">
+            <small>Copyright &copy; ATEESH </small>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+    const roadMapsLink = document.querySelector('a[href="roadmaps.html"]');
+    
+    roadMapsLink.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    console.log('Road Maps link clicked'); // Debugging statement
+    modal.style.display = 'block';
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const interestBoxes = document.querySelectorAll('.interest-box');
+    const modal = document.getElementById('interest-modal');
+
+    interestBoxes.forEach(box => {
+        box.addEventListener('click', () => {
+            box.classList.toggle('selected');
+            const span = box.querySelector('span');
+            if (box.classList.contains('selected')) {
+                span.textContent = 'check';
+            } else {
+                span.textContent = 'add';
+            }
+        });
+    });
+
+    const closeModalBtn = document.querySelector('.close');
+
+    // Handle opening and closing modal when clicking on "Road Maps" link
+    const roadMapsLink = document.querySelector('a[href="roadmaps.html"]');
+    roadMapsLink.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        modal.style.display = 'block';
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+slidesPerView: 1,
+spaceBetween: 30,
+pagination: {
+  el: ".swiper-pagination",
+  clickable: true,
+},
+breakpoints:{
+    600:{
+        slidesPerView: 2,
+    }
+}
+});
+</script>
+
+</body>
+</html>

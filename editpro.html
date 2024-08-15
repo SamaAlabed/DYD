@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile | Decode Your Destination</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/unicons.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/profile.css"> <!-- Replace with your profile page CSS file -->
+    <style>
+        .form-group label {
+            color: #000; /* Ensure labels are black */
+        }
+        .form-control:disabled {
+            background-color: #e9ecef; /* Light grey background for disabled inputs */
+            cursor: not-allowed;
+        }
+        .contact-container {
+            background: var(--color-primary);
+            padding: 2rem;
+            width: 50%;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        .contact-container table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 1rem;
+        }
+        .contact-container td {
+            padding: 0.5rem;
+        }
+        .contact-container input {
+            outline: auto;
+            width: calc(100% - 10px); /* Adjust width to fit within padding */
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-container label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .button-container button {
+            background-color: var(--color-primary);
+           
+            border: none;
+            padding: 0.75rem 1.5rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            
+            outline-color: darkgray;
+        }
+        .button-container button.cancel {
+            background-color: #ccc;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="index1.html"><h3>Decode Your Destination</h3></a>
+            <ul class="nav-menu"> 
+                <li><a href="index1.html">Home</a></li>
+                <!--<li><a href="profile.html">Profile</a></li>--> 
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="profile-section">
+        <div class="container">
+            <h1>Edit Your Profile</h1>
+            <div class="contact-container">
+                <table>
+                    <tr>
+                        <td>
+                            <label style="color: #000;" for="first-name">First Name:</label>
+                            <input id="first-name" type="text" name="first-name">
+                        </td>
+                        <td>
+                            <label style="color: #000;"  for="last-name">Last Name:</label>
+                            <input id="last-name" type="text" name="last-name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label style="color: #000;"  for="email">Email Address:</label>
+                            <input id="email" type="email" name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label style="color: #000;"  for="phone">Phone Number:</label>
+                            <input id="phone" type="tel" name="phone">
+                        </td>
+                    </tr>
+                </table>
+                <div class="button-container">
+                    <button style="color: #000;background-color: #ccc;" type="submit">Save Changes</button>
+                    <button type="button" class="cancel" onclick="window.location.href='profile.html';">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-1">
+                <a href="index1.html" class="footer-logo"><h4>ATEESH</h4></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, hic.</p>
+            </div>
+            <div class="footer-2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="about1.html">About</a></li>
+                    <li><a href="courses1.html">Courses</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 8004640159</p>
+                    <p>DecodeYourDestination@gmail.com</p>
+                </div>
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <small>&copy; ATEESH</small>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
