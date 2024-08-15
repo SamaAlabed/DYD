@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1f2641; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    background-color: #6a0dad;
+    width: 90%;
+    max-width: 60vw;
+    border-radius: 10px;
+    max-height:70vh;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-header {
+    background-color: #4b0082;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #8a2be2;
+}
+
+.chat-messages {
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #e6e6fa;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 0.3s ease;
+}
+
+.message p {
+    margin: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.message .time {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: #9c8ca6;
+}
+
+.message.sent {
+    justify-content: flex-end;
+}
+
+.message.sent p {
+    background-color: #8a2be2;
+    color: #fff;
+}
+
+.message.received {
+    justify-content: flex-start;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background-color: #4b0082;
+    border-top: 2px solid #8a2be2;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.chat-input button {
+    background-color: #8a2be2;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #6a0dad;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,31 @@
+.select-wrapper {
+    margin: 10px 0;
+    font-family: Andalus, sans-serif;
+    text-align: center;
+}
+
+label {
+    display: flow-root;
+    margin-bottom: 7px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+select {
+    background-color: #2e3266;
+    width: 30%;
+    padding: 25px;
+    border-radius: 90px;
+    border: 1px solid #42488f;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+option:hover {
+    background-color: #dcd9d9 ;
+    padding: 20px;
+    font-size: 20px;
+}
